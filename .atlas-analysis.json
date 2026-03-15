@@ -1,0 +1,146 @@
+{
+  "projectType": "saas",
+  "projectName": "Grafikart.fr",
+  "projectDescription": "An open-source French web platform offering programming tutorials, courses, a community forum, and premium memberships built with Symfony and Preact.",
+  "theme": "almond",
+  "primaryColor": "#05656c",
+  "lightColor": "#7cb4b4",
+  "darkColor": "#c7dedf",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Overview",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "project-structure"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/courses",
+              "features/blog",
+              "features/forum",
+              "features/premium",
+              "features/badges"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": [
+              "development/local-setup",
+              "development/docker",
+              "development/seeding"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "development/architecture",
+              "development/domain-layer",
+              "development/http-layer",
+              "development/infrastructure"
+            ]
+          },
+          {
+            "group": "Testing & Quality",
+            "pages": [
+              "development/testing",
+              "development/linting",
+              "development/formatting"
+            ]
+          },
+          {
+            "group": "Frontend",
+            "pages": [
+              "development/frontend-assets",
+              "development/javascript",
+              "development/scss"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Deployment",
+        "groups": [
+          {
+            "group": "Deploy",
+            "pages": [
+              "deployment/overview",
+              "deployment/production",
+              "deployment/nginx",
+              "deployment/ansible"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "deployment/oauth",
+              "deployment/stripe",
+              "deployment/paypal",
+              "deployment/discord",
+              "deployment/youtube"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/courses",
+              "api/comments",
+              "api/forum",
+              "api/notifications",
+              "api/premium",
+              "api/search"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Video tutorial courses and formations (cursus)",
+    "Premium subscription system with Stripe and PayPal",
+    "Community forum with topics and tags",
+    "Blog with categories and posts",
+    "User authentication with OAuth (GitHub, Google, Facebook, Discord)",
+    "Badge and achievement system",
+    "Admin panel for content and user management",
+    "Search powered by a custom search index",
+    "Real-time notifications via Mercure",
+    "School/group learning features",
+    "Live streaming integration (Twitch/YouTube)"
+  ],
+  "publicApiSurface": [
+    "GET /api/comments",
+    "POST /api/comments",
+    "GET /api/forum/topics",
+    "POST /api/forum/topics",
+    "GET /api/notifications",
+    "DELETE /api/notifications/{id}",
+    "GET /api/premium",
+    "POST /api/premium",
+    "GET /api/search",
+    "GET /api/badges",
+    "GET /api/technologies",
+    "GET /api/profil",
+    "PUT /api/profil",
+    "POST /api/progress",
+    "GET /api/discord"
+  ]
+}
